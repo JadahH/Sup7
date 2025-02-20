@@ -1,0 +1,29 @@
+<documentation>
+  <summary>
+    This document provides method-level documentation for the LINQ_Assignment project.
+    The project consists of three core functionalities:
+    - Retrieving even numbers from an array.
+    - Shuffling an array and returning odd numbers.
+    - Computing statistical metrics (average, min, max) for an array.
+  </summary>
+
+  <class name="GetEven">
+    <summary>
+      Provides functionality to retrieve even numbers from an integer array using LINQ.
+    </summary>
+    <method name="GetEvenNumbers">
+      <summary>
+        Returns all even numbers from an array with an option to skip items.
+      </summary>
+      <param name="numbers">An integer array representing the dataset.</param>
+      <param name="skip">An optional parameter that skips a specified number of even numbers.</param>
+      <returns>A collection of even numbers from the input array.</returns>
+      <example>
+        <![CDATA[
+        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        var evens = GetEven.GetEvenNumbers(numbers, 2);
+        // Result: { 6, 8 }
+        ]]>
+      </example>
+    </method>
+  </class>
