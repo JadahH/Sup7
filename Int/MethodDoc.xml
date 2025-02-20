@@ -27,3 +27,25 @@
       </example>
     </method>
   </class>
+
+
+  <class name="GetOdd">
+    <summary>
+      Provides functionality to shuffle an array and retrieve odd numbers using LINQ.
+    </summary>
+    <method name="GetShuffledOddNumbers">
+      <summary>
+        Shuffles an array and returns only the odd numbers.
+      </summary>
+      <param name="numbers">An integer array representing the dataset.</param>
+      <param name="skip">An optional parameter that skips a specified number of odd numbers.</param>
+      <returns>A shuffled collection of odd numbers from the input array.</returns>
+      <example>
+        <![CDATA[
+        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
+        var odds = GetOdd.GetShuffledOddNumbers(numbers, 1);
+        // Result (shuffled): { 5, 7, 1 }
+        ]]>
+      </example>
+    </method>
+  </class>
