@@ -6,7 +6,7 @@ namespace Int.Tests;
 public class GetArrayTests
     {
         [Fact]
-        public void GetArray_ShouldReturnCorrectStatistics()
+        public void GetArray_ReturnCorrectStatistics()
         {
             int[] numbers = Enumerable.Range(1, 100).ToArray();
             var stats = GetArray.GetStatistics(numbers);

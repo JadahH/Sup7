@@ -17,5 +17,3 @@ public class GetOddTests
 
 }
 
-// git add  Int.Tests/GetArrayTest.cs
-// git add Int/Int.csproj 
