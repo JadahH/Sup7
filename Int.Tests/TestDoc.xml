@@ -48,3 +48,27 @@
       </test_case>
     </method>
   </class>
+
+  <class name="GetArrayTests">
+    <summary>
+      Unit tests for verifying the correctness of the GetStatistics method.
+    </summary>
+
+    <method name="GetArray_ReturnCorrectStatistics">
+      <summary>
+        Ensures that GetStatistics correctly calculates average, min, and max values.
+      </summary>
+      <test_case>
+        <input>numbers = {1, 2, 3, 4, 5}</input>
+        <expected_output>(Average = 3.0, Min = 1, Max = 5)</expected_output>
+      </test_case>
+    </method>
+  </class>
+
+  <notes>
+    <bullet>Unit tests follow the Arrange-Act-Assert pattern for clarity.</bullet>
+    <bullet>Test data includes small and large datasets for validation.</bullet>
+    <bullet>All methods are tested for edge cases, including empty arrays and skip values.</bullet>
+    <bullet>Random shuffling in GetShuffledOddNumbers means outputs may vary.</bullet>
+  </notes>
+</documentation>
