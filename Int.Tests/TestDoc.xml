@@ -21,3 +21,30 @@
         <expected_output>{0, 2, 4, 6, 8, 10}</expected_output>
       </test_case>
     </method>
+
+    <method name="GetEven_SkipNumbers">
+      <summary>
+        Tests that GetEvenNumbers correctly skips the specified number of even numbers.
+      </summary>
+      <test_case>
+        <input>numbers = {0, 2, 4, 6, 8, 10, 12, 14}, skip = 3</input>
+        <expected_output>{6, 8, 10, 12, 14}</expected_output>
+      </test_case>
+    </method>
+  </class>
+
+  <class name="GetOddTests">
+    <summary>
+      Unit tests for verifying the correctness of the GetShuffledOddNumbers method.
+    </summary>
+    
+    <method name="GetOdd_ReturnOddNumbers">
+      <summary>
+        Ensures that GetShuffledOddNumbers returns only odd numbers, even when shuffled.
+      </summary>
+      <test_case>
+        <input>numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</input>
+        <expected_output>Shuffled odd numbers (e.g., {3, 1, 5, 7, 9})</expected_output>
+      </test_case>
+    </method>
+  </class>
