@@ -1,0 +1,23 @@
+<documentation>
+  <summary>
+    This document provides method-level documentation for the unit tests in the LINQ_Assignment project.
+    The project consists of three test classes:
+    - GetEvenTests: Validates filtering and skipping of even numbers.
+    - GetOddTests: Ensures odd numbers are correctly filtered from a shuffled array.
+    - GetArrayTests: Checks statistical calculations (average, min, max).
+  </summary>
+
+  <class name="GetEvenTests">
+    <summary>
+      Unit tests for verifying the correctness of the GetEvenNumbers method.
+    </summary>
+    
+    <method name="GetEven_ReturnEvenNumbers">
+      <summary>
+        Validates that GetEvenNumbers correctly returns only even numbers from the array.
+      </summary>
+      <test_case>
+        <input>numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</input>
+        <expected_output>{0, 2, 4, 6, 8, 10}</expected_output>
+      </test_case>
+    </method>
