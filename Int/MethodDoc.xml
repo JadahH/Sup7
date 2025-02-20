@@ -49,3 +49,31 @@
       </example>
     </method>
   </class>
+
+<class name="GetArray">
+    <summary>
+      Provides functionality to compute statistical measures from an integer array.
+    </summary>
+    <method name="GetStatistics">
+      <summary>
+        Computes and returns the average, minimum, and maximum of the provided array.
+      </summary>
+      <param name="numbers">An integer array representing the dataset.</param>
+      <returns>A tuple containing (average, minimum, maximum) values.</returns>
+      <example>
+        <![CDATA[
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        var stats = GetArray.GetStatistics(numbers);
+        // Result: (3.0, 1, 5)
+        ]]>
+      </example>
+    </method>
+  </class>
+
+  <notes>
+    <bullet>The methods in this project utilize LINQ for efficient filtering and querying.</bullet>
+    <bullet>Random shuffling in GetShuffledOddNumbers is achieved using System.Random.</bullet>
+    <bullet>Unit tests have been implemented to validate all methods.</bullet>
+    <bullet>XML documentation is provided to assist with IntelliSense and automated documentation generation.</bullet>
+  </notes>
+</documentation>
